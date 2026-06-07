@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>去做自己的山 - 第1章 你就大大方方做自己</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(135deg, #fdf6ec 0%, #fbe9d7 100%);
+    color: #333;
+    padding: 30px 20px;
+    min-height: 100vh;
+  }
+  .container { max-width: 1300px; margin: 0 auto; }
+  h1 {
+    text-align: center;
+    color: #d35400;
+    margin-bottom: 8px;
+    font-size: 28px;
+  }
+  .subtitle {
+    text-align: center;
+    color: #7f5539;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  }
+  thead {
+    background: #d35400;
+    color: #fff;
+  }
+  th, td {
+    padding: 14px;
+    vertical-align: top;
+    border-bottom: 1px solid #f0e0d0;
+    text-align: left;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+  th { font-weight: 600; letter-spacing: 0.5px; }
+  tbody tr:hover { background: #fff8ef; }
+  td.col1 { width: 28%; color: #4a3528; }
+  td.col2 { width: 28%; color: #1f4068; }
+  td.col3 { width: 44%; color: #444; font-size: 13.5px; }
+  .translation {
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .translation:hover { background-color: #e6f0fa; }
+  .translation:active { background-color: #d0e3f5; }
+  .section-title {
+    background: #fdf0db;
+    color: #b94900;
+    font-weight: 700;
+    padding: 12px 14px;
+  }
+  .vocab-item {
+    display: block;
+    margin: 6px 0;
+    background: #fef4e8;
+    border: 1px solid #f4cfa7;
+    border-left: 4px solid #d35400;
+    padding: 8px 12px;
+    line-height: 1.5;
+    border-radius: 4px;
+  }
+  .vocab-word {
+    cursor: pointer;
+    color: #b94900;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+  }
+  .vocab-word:hover { background-color: #ffe6cc; }
+  .vocab-word:active { background-color: #ffd1a4; }
+  .pos {
+    color: #fff;
+    background: #d35400;
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 8px;
+    margin-left: 4px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .phonetic {
+    color: #888;
+    font-style: italic;
+    margin-left: 4px;
+    font-size: 13px;
+  }
+  /* 句中释义：虚线红框样式（参考图片） */
+  .sense-cn {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 8px;
+    color: #c0392b;
+    border: 1px dashed #c0392b;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    vertical-align: middle;
+    background: #fff;
+  }
+  .meta-line {
+    color: #555;
+    font-size: 13px;
+    margin-top: 2px;
+  }
+  .meta-label {
+    color: #d35400;
+    font-weight: 600;
+  }
+  .phrase-block {
+    margin-top: 4px;
+    padding: 4px 8px;
+    background: #fff8ef;
+    border-radius: 3px;
+    border-left: 2px solid #f4cfa7;
+  }
+  .note {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>去做自己的山</h1>
+  <p class="subtitle">第1章 你就大大方方做自己 · 01 认清自己，是最重要的事</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>原文（Source）</th>
+        <th>译文（Translation）</th>
+        <th>词汇与用法（Vocabulary & Usage）</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- 段落一 -->
+      <tr>
+        <td class="col1 section-title" colspan="3">段落一 · 《我的阿勒泰》中的"有用"之问</td>
+      </tr>
+      <tr>
+        <td class="col1">2024年夏天，电视剧《我的阿勒泰》爆火，里面有一个片段非常"出圈"，打动了很多人。</td>
+        <td class="col2"><div class="translation">In the summer of 2024, the TV drama <em>My Altai</em> became a phenomenal hit, with one particular scene going viral and deeply moving countless viewers.</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">phenomenal</span><span class="pos">adj.</span><span class="phonetic">/fəˈnɒmɪnl/</span><span class="sense-cn">非凡的、了不起的</span>
+            <div class="meta-line">在句中作定语，修饰 hit</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>a phenomenal success
+              <div class="meta-line"><span class="meta-label">例句：</span>Her novel was a phenomenal success last year.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">viral</span><span class="pos">adj.</span><span class="phonetic">/ˈvaɪərəl/</span><span class="sense-cn">走红的、刷屏式的</span>
+            <div class="meta-line">在句中作表语，构成 go viral 短语</div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">go viral</span>
+            <div class="meta-line">短语释义：走红、刷屏、迅速传播开来</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>The clip went viral within hours.</div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">viewer</span><span class="pos">n.</span><span class="phonetic">/ˈvjuːə(r)/</span><span class="sense-cn">观众、观看者</span>
+            <div class="meta-line">在句中作宾语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>a regular viewer
+              <div class="meta-line"><span class="meta-label">例句：</span>He is a regular viewer of this channel.</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">女儿李文秀倚着一棵大树说："我虽然笨手笨脚，但我还是个有用的人对不对？"</td>
+        <td class="col2"><div class="translation">The daughter, Li Wenxiu, leaning against a big tree, said: "I may be clumsy and awkward, but I'm still a useful person, right?"</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">lean</span><span class="pos">v.</span><span class="phonetic">/liːn/</span><span class="sense-cn">倚靠、斜靠</span>
+            <div class="meta-line">在句中作谓语（伴随状语）</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>lean against
+              <div class="meta-line"><span class="meta-label">例句：</span>He leaned against the door, waiting.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">lean against</span>
+            <div class="meta-line">短语释义：倚靠、斜靠</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>lean against the wall（靠墙站着）</div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">clumsy</span><span class="pos">adj.</span><span class="phonetic">/ˈklʌmzi/</span><span class="sense-cn">笨拙的、手脚不灵活的</span>
+            <div class="meta-line">在句中作表语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>clumsy fingers
+              <div class="meta-line"><span class="meta-label">例句：</span>His clumsy fingers dropped the cup.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">awkward</span><span class="pos">adj.</span><span class="phonetic">/ˈɔːkwəd/</span><span class="sense-cn">笨拙的、不灵光的</span>
+            <div class="meta-line">在句中作表语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>an awkward silence
+              <div class="meta-line"><span class="meta-label">例句：</span>There was an awkward silence in the room.</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">妈妈张凤侠反问她："啥叫有用，李文秀？"</td>
+        <td class="col2"><div class="translation">Her mother, Zhang Fengxia, retorted: "What do you mean by 'useful,' Li Wenxiu?"</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">retort</span><span class="pos">v.</span><span class="phonetic">/rɪˈtɔːt/</span><span class="sense-cn">反驳、回嘴</span>
+            <div class="meta-line">在句中作谓语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>retort sharply
+              <div class="meta-line"><span class="meta-label">例句：</span>She retorted sharply that he was wrong.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">What do you mean by ...</span>
+            <div class="meta-line">短语释义：……是什么意思？你说……是什么意思？</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>What do you mean by "fair"?（你说的"公平"是什么意思？）</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">"生你下来是为了让你服务别人的？"</td>
+        <td class="col2"><div class="translation">"Did I bring you into this world to serve others?"</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">bring</span><span class="pos">v.</span><span class="phonetic">/brɪŋ/</span><span class="sense-cn">带来、带到</span>
+            <div class="meta-line">在句中作谓语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>bring ... into the world
+              <div class="meta-line"><span class="meta-label">例句：</span>She brought a child into the world.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">bring ... into the world</span>
+            <div class="meta-line">短语释义：把……带到世上；生（孩子）</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>近义：give birth to</div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">serve</span><span class="pos">v.</span><span class="phonetic">/sɜːv/</span><span class="sense-cn">服务、为……效力</span>
+            <div class="meta-line">在句中作不定式 to serve 的动词</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>serve the people
+              <div class="meta-line"><span class="meta-label">例句：</span>He dedicated his life to serve the people.</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">"你看看这个草原上的树啊、草啊，有人吃有人用，便叫有用；"</td>
+        <td class="col2"><div class="translation">"Look at the trees and grasses on this prairie — when people eat them or use them, they call them useful;"</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">prairie</span><span class="pos">n.</span><span class="phonetic">/ˈpreəri/</span><span class="sense-cn">草原、大牧场</span>
+            <div class="meta-line">在句中作介词宾语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>vast prairie lands
+              <div class="meta-line"><span class="meta-label">例句：</span>They rode across the vast prairie lands.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">call</span><span class="pos">v.</span><span class="phonetic">/kɔːl/</span><span class="sense-cn">把……称为、叫作</span>
+            <div class="meta-line">在句中作复合谓语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>call ... useful / call it a day
+              <div class="meta-line"><span class="meta-label">例句：</span>Let's call it a day and go home.</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">"要是没有人用，它就这么待在草原上也很好嘛！"</td>
+        <td class="col2"><div class="translation">"but if no one uses them, isn't it perfectly fine for them to simply stay on the prairie just as they are?"</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">stay</span><span class="pos">v.</span><span class="phonetic">/steɪ/</span><span class="sense-cn">停留、待在</span>
+            <div class="meta-line">在句中作不定式动词</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>stay where you are
+              <div class="meta-line"><span class="meta-label">例句：</span>Stay where you are; I'll come to you.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">just as ... are</span>
+            <div class="meta-line">短语释义：保持原样；和……一样</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>Leave things just as they are.（让一切保持原样）</div>
+          </div>
+        </td>
+      </tr>
+
+      <!-- 段落二 -->
+      <tr>
+        <td class="col1 section-title" colspan="3">段落二 · 活得有用的执念</td>
+      </tr>
+      <tr>
+        <td class="col1">【衔接句】我想，大家之所以会被这段对话打动，是因为传统认知中，我们总觉得，一定要活得有价值，要么能赚钱养家，要么能承担家务劳动。</td>
+        <td class="col2"><div class="translation">I believe the reason this dialogue strikes such a chord is that, in our traditional way of thinking, we always feel that life must be lived in a meaningful way — either one must be able to earn money to support the family, or one must shoulder the housework.</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">dialogue</span><span class="pos">n.</span><span class="phonetic">/ˈdaɪəlɒɡ/</span><span class="sense-cn">对话、对白</span>
+            <div class="meta-line">在句中作主语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>a moving dialogue
+              <div class="meta-line"><span class="meta-label">例句：</span>The film ends with a moving dialogue.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">strike a chord</span>
+            <div class="meta-line">短语释义：引起共鸣、触动心弦</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>Her speech struck a chord with millions of viewers.</div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">meaningful</span><span class="pos">adj.</span><span class="phonetic">/ˈmiːnɪŋfl/</span><span class="sense-cn">有意义的、有价值的</span>
+            <div class="meta-line">在句中作定语，修饰 way</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>a meaningful life
+              <div class="meta-line"><span class="meta-label">例句：</span>He wants to live a meaningful life.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">shoulder</span><span class="pos">v.</span><span class="phonetic">/ˈʃəʊldə(r)/</span><span class="sense-cn">承担、肩负</span>
+            <div class="meta-line">在句中作情态动词 must 后的谓语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>shoulder the responsibility
+              <div class="meta-line"><span class="meta-label">例句：</span>You must shoulder the responsibility.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">earn a living</span>
+            <div class="meta-line">短语释义：谋生、赚钱糊口</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>earn an honest living（靠正当劳动谋生）</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">但如果时时刻刻都以有用与否来衡量，我们就会将自己约束在条条框框中，直至紧绑得让人难以忍受。</td>
+        <td class="col2"><div class="translation">But if we measure ourselves every moment by whether we are "useful" or not, we will end up confining ourselves within a rigid set of rules, until we are bound so tightly that it becomes unbearable.</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">confine</span><span class="pos">v.</span><span class="phonetic">/kənˈfaɪn/</span><span class="sense-cn">限制、约束</span>
+            <div class="meta-line">在句中作谓语（end up + doing）</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>confine ... to / within
+              <div class="meta-line"><span class="meta-label">例句：</span>He was confined to a wheelchair.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">rigid</span><span class="pos">adj.</span><span class="phonetic">/ˈrɪdʒɪd/</span><span class="sense-cn">死板的、僵化的</span>
+            <div class="meta-line">在句中作定语，修饰 set</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>rigid rules / a rigid schedule
+              <div class="meta-line"><span class="meta-label">例句：</span>The school has a rigid schedule.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">unbearable</span><span class="pos">adj.</span><span class="phonetic">/ʌnˈbeərəbl/</span><span class="sense-cn">难以忍受的、无法承受的</span>
+            <div class="meta-line">在句中作表语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>unbearable pain
+              <div class="meta-line"><span class="meta-label">例句：</span>The pain was almost unbearable.</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">况且，任何人都没有权利质疑他人的生活，一个人的生活是否有价值，最终只能由自己评判。</td>
+        <td class="col2"><div class="translation">Moreover, no one has the right to question how another person chooses to live — whether one's life is valuable can ultimately be judged only by oneself.</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">moreover</span><span class="pos">adv.</span><span class="phonetic">/mɔːrˈəʊvə(r)/</span><span class="sense-cn">此外、而且</span>
+            <div class="meta-line">在句中作插入语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>moreover, ...
+              <div class="meta-line"><span class="meta-label">例句：</span>Moreover, we should respect their choice.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">question</span><span class="pos">v.</span><span class="phonetic">/ˈkwestʃən/</span><span class="sense-cn">质疑、质问</span>
+            <div class="meta-line">在句中作不定式 to question</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>question one's decision
+              <div class="meta-line"><span class="meta-label">例句：</span>Don't question my decision.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">ultimately</span><span class="pos">adv.</span><span class="phonetic">/ˈʌltɪmətli/</span><span class="sense-cn">最终、归根到底</span>
+            <div class="meta-line">在句中作状语，修饰 can be judged</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>ultimately decide
+              <div class="meta-line"><span class="meta-label">例句：</span>Ultimately, you must decide for yourself.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">judge</span><span class="pos">v.</span><span class="phonetic">/dʒʌdʒ/</span><span class="sense-cn">评判、判断</span>
+            <div class="meta-line">在句中作被动谓语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>judge for oneself
+              <div class="meta-line"><span class="meta-label">例句：</span>Judge for yourself whether it's right.</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">若他能够遵从自己的内心，按照自己的方式自洽地度过一生，这就是最有价值的人生。</td>
+        <td class="col2"><div class="translation">If a person can follow their own heart and live a self-consistent life in their own way, that is the most valuable life of all.</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">follow</span><span class="pos">v.</span><span class="phonetic">/ˈfɒləʊ/</span><span class="sense-cn">跟随、遵从</span>
+            <div class="meta-line">在句中作情态动词 can 后的谓语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>follow one's heart
+              <div class="meta-line"><span class="meta-label">例句：</span>Follow your heart, not the crowd.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">follow one's heart</span>
+            <div class="meta-line">短语释义：跟随内心、遵从本心</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>近义：trust your gut</div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">self-consistent</span><span class="pos">adj.</span><span class="phonetic">/ˌself kənˈsɪstənt/</span><span class="sense-cn">自洽的、前后一致的</span>
+            <div class="meta-line">在句中作定语，修饰 life</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>a self-consistent narrative
+              <div class="meta-line"><span class="meta-label">例句：</span>He keeps a self-consistent narrative throughout the book.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">in one's own way</span>
+            <div class="meta-line">短语释义：以自己的方式；按某人特有的方式</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>Everyone learns in their own way.</div>
+          </div>
+        </td>
+      </tr>
+
+      <!-- 段落三 -->
+      <tr>
+        <td class="col1 section-title" colspan="3">段落三 · 大城市追梦还是回家考公？</td>
+      </tr>
+      <tr>
+        <td class="col1">前不久，一位年轻的粉丝朋友在社交媒体上问了我这样一个问题：自己想留在大城市追求职业梦想，但过年团聚时，父母却催她回家考公务员，该怎么办？</td>
+        <td class="col2"><div class="translation">Not long ago, a young fan reached out to me on social media with this question: she wants to stay in the big city to pursue her career dreams, but whenever the family gathers for the New Year, her parents urge her to come home and sit for the civil service exam — what should she do?</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">reach</span><span class="pos">v.</span><span class="phonetic">/riːtʃ/</span><span class="sense-cn">伸出、联系</span>
+            <div class="meta-line">在句中作谓语（reached out）</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>reach out to
+              <div class="meta-line"><span class="meta-label">例句：</span>Please reach out to me if you need help.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">reach out to</span>
+            <div class="meta-line">短语释义：联系、伸出援手、与……沟通</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>reach out to someone for advice（向某人寻求建议）</div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">pursue</span><span class="pos">v.</span><span class="phonetic">/pəˈsjuː/</span><span class="sense-cn">追求、追逐</span>
+            <div class="meta-line">在句中作不定式 to pursue</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>pursue one's dream
+              <div class="meta-line"><span class="meta-label">例句：</span>She moved abroad to pursue her dream.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">urge</span><span class="pos">v.</span><span class="phonetic">/ɜːdʒ/</span><span class="sense-cn">催促、力劝</span>
+            <div class="meta-line">在句中作谓语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>urge someone to do
+              <div class="meta-line"><span class="meta-label">例句：</span>They urged him to stay.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">civil service exam</span>
+            <div class="meta-line">短语释义：公务员考试；公职考试</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>pass / sit for the civil service exam（通过 / 参加公务员考试）</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">在我看来，这个问题并非难以处理，我们可以参考和尊重父母的意见，但真正能指引我们做出决定的，一定是自己的内心。</td>
+        <td class="col2"><div class="translation">In my view, this question is not all that hard to handle. We can take our parents' opinions into consideration and respect them, but what truly guides us in making a decision must always come from our own inner voice.</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">in one's view</span>
+            <div class="meta-line">短语释义：在某人看来</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>近义：in one's opinion</div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">guide</span><span class="pos">v.</span><span class="phonetic">/ɡaɪd/</span><span class="sense-cn">指引、引导</span>
+            <div class="meta-line">在句中作主语从句中的谓语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>guide someone through
+              <div class="meta-line"><span class="meta-label">例句：</span>Let me guide you through the process.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">take ... into consideration</span>
+            <div class="meta-line">短语释义：考虑到、把……纳入考虑</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>近义：take ... into account</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">如果你确信大城市的机遇和挑战更符合你的志向，那么请勇敢地选择留下。</td>
+        <td class="col2"><div class="translation">If you are convinced that the opportunities and challenges of the big city align better with your aspirations, then please have the courage to choose to stay.</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">convinced</span><span class="pos">adj.</span><span class="phonetic">/kənˈvɪnst/</span><span class="sense-cn">确信的、坚信的</span>
+            <div class="meta-line">在句中作表语（be convinced that ...）</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>be convinced of / that ...
+              <div class="meta-line"><span class="meta-label">例句：</span>I'm convinced of his innocence.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">aspiration</span><span class="pos">n.</span><span class="phonetic">/ˌæspəˈreɪʃn/</span><span class="sense-cn">志向、抱负</span>
+            <div class="meta-line">在句中作介词 with 的宾语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>personal aspirations
+              <div class="meta-line"><span class="meta-label">例句：</span>Follow your personal aspirations.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">align with</span>
+            <div class="meta-line">短语释义：与……一致、与……相吻合</div>
+            <div class="meta-line"><span class="meta-label">常用表达：</span>Our goals align with the company's mission.</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1">当你的内核足够坚稳时，旁人的各种声音便不足以动摇你的决定。</td>
+        <td class="col2"><div class="translation">When your inner core is steady and strong enough, the various voices of those around you will no longer be enough to shake your resolve.</div></td>
+        <td class="col3">
+          <div class="vocab-item">
+            <span class="vocab-word">inner</span><span class="pos">adj.</span><span class="phonetic">/ˈɪnə(r)/</span><span class="sense-cn">内心的、内部的</span>
+            <div class="meta-line">在句中作定语，修饰 core</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>inner peace
+              <div class="meta-line"><span class="meta-label">例句：</span>Meditation helps me find inner peace.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">steady</span><span class="pos">adj.</span><span class="phonetic">/ˈstedi/</span><span class="sense-cn">稳固的、坚定的</span>
+            <div class="meta-line">在句中作表语（与 strong 并列）</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>steady growth
+              <div class="meta-line"><span class="meta-label">例句：</span>The company has seen steady growth this year.</div>
+            </div>
+          </div>
+          <div class="vocab-item">
+            <span class="vocab-word">resolve</span><span class="pos">n.</span><span class="phonetic">/rɪˈzɒlv/</span><span class="sense-cn">决心、毅力</span>
+            <div class="meta-line">在句中作动词 shake 的宾语</div>
+            <div class="phrase-block">
+              <span class="meta-label">常用短语：</span>shake one's resolve
+              <div class="meta-line"><span class="meta-label">例句：</span>Nothing could shake his resolve.</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="note">💡 提示：点击第二列译文（蓝色）朗读整句译文；点击第三列橙色单词/短语，<strong>只朗读其本身</strong>。红色虚框内为该单词在当前句子语境下的中文释义。</p>
+</div>
+
+<script>
+  let currentUtterance = null;
+
+  function speak(text, lang) {
+    if (!('speechSynthesis' in window)) {
+      alert('您的浏览器不支持语音朗读功能。');
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = lang;
+    u.rate = 0.95;
+    u.pitch = 1;
+    currentUtterance = u;
+    window.speechSynthesis.speak(u);
+  }
+
+  // 第二列：译文朗读（整句）
+  document.querySelectorAll('.translation').forEach(function (el) {
+    el.addEventListener('click', function () {
+      speak(el.innerText.trim(), 'en-US');
+    });
+  });
+
+  // 第三列：单词/短语朗读（仅朗读自身，不带音标/词性/释义等附加信息）
+  document.querySelectorAll('.vocab-word').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.stopPropagation();
+      // 只取第一个文本节点（单词或短语本身）
+      let text = el.getAttribute('data-spell');
+      if (!text) {
+        for (const node of el.childNodes) {
+          if (node.nodeType === Node.TEXT_NODE && node.nodeValue.trim()) {
+            text = node.nodeValue.trim();
+            break;
+          }
+        }
+      }
+      if (text) speak(text, 'en-US');
+    });
+  });
+</script>
+</body>
+</html>
