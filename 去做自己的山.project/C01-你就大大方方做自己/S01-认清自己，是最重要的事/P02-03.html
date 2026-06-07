@@ -50,6 +50,28 @@
   td.col1 { width: 28%; color: #4a3528; }
   td.col2 { width: 28%; color: #1f4068; }
   td.col3 { width: 44%; color: #444; font-size: 13.5px; }
+  /* 第一列原文：可被选中 */
+  .source-cell {
+    cursor: text;
+    user-select: text;
+    padding: 4px 6px;
+    border-radius: 4px;
+  }
+  .source-cell::selection { background: #ffd180; color: #333; }
+  .source-cell::-moz-selection { background: #ffd180; color: #333; }
+  /* 第二列译文中可被高亮的短语 */
+  mark.hl {
+    background: transparent;
+    color: inherit;
+    padding: 1px 2px;
+    border-radius: 3px;
+    transition: background-color 0.25s, box-shadow 0.25s;
+  }
+  mark.hl.active {
+    background: #fff3a0;
+    box-shadow: 0 0 0 2px #f0c040 inset;
+    color: #6b4400;
+  }
   .translation {
     cursor: pointer;
     padding: 4px 6px;
@@ -157,9 +179,9 @@
       <tr>
         <td class="col1 section-title" colspan="3">段落一 · 《我的阿勒泰》中的"有用"之问</td>
       </tr>
-      <tr>
-        <td class="col1">2024年夏天，电视剧《我的阿勒泰》爆火，里面有一个片段非常"出圈"，打动了很多人。</td>
-        <td class="col2"><div class="translation">In the summer of 2024, the TV drama <em>My Altai</em> became a phenomenal hit, with one particular scene going viral and deeply moving countless viewers.</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">2024年夏天，电视剧《我的阿勒泰》<mark class="hl" data-pair="爆火">爆火</mark>，里面有一个片段非常"出圈"，<mark class="hl" data-pair="打动了很多人">打动了很多人</mark>。</div></td>
+        <td class="col2"><div class="translation">In the summer of 2024, the TV drama <em>My Altai</em> became a <mark class="hl" data-pair="爆火">phenomenal hit</mark>, with one particular scene going viral and <mark class="hl" data-pair="打动了很多人">deeply moving countless viewers</mark>.</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">phenomenal</span><span class="pos">adj.</span><span class="phonetic">/fəˈnɒmɪnl/</span><span class="sense-cn">非凡的、了不起的</span>
@@ -188,9 +210,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">女儿李文秀倚着一棵大树说："我虽然笨手笨脚，但我还是个有用的人对不对？"</td>
-        <td class="col2"><div class="translation">The daughter, Li Wenxiu, leaning against a big tree, said: "I may be clumsy and awkward, but I'm still a useful person, right?"</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">女儿李文秀<mark class="hl" data-pair="倚着一棵大树">倚着一棵大树</mark>说："我虽然<mark class="hl" data-pair="笨手笨脚">笨手笨脚</mark>，但我还是个<mark class="hl" data-pair="有用的人">有用的人</mark>对不对？"</div></td>
+        <td class="col2"><div class="translation">The daughter, Li Wenxiu, <mark class="hl" data-pair="倚着一棵大树">leaning against a big tree</mark>, said: "I may be <mark class="hl" data-pair="笨手笨脚">clumsy and awkward</mark>, but I'm still <mark class="hl" data-pair="有用的人">a useful person</mark>, right?"</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">lean</span><span class="pos">v.</span><span class="phonetic">/liːn/</span><span class="sense-cn">倚靠、斜靠</span>
@@ -223,9 +245,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">妈妈张凤侠反问她："啥叫有用，李文秀？"</td>
-        <td class="col2"><div class="translation">Her mother, Zhang Fengxia, retorted: "What do you mean by 'useful,' Li Wenxiu?"</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">妈妈张凤侠<mark class="hl" data-pair="反问她">反问她</mark>："啥叫<mark class="hl" data-pair="有用">有用</mark>，李文秀？"</div></td>
+        <td class="col2"><div class="translation">Her mother, Zhang Fengxia, <mark class="hl" data-pair="反问她">retorted</mark>: "What do you mean by '<mark class="hl" data-pair="有用">useful</mark>,' Li Wenxiu?"</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">retort</span><span class="pos">v.</span><span class="phonetic">/rɪˈtɔːt/</span><span class="sense-cn">反驳、回嘴</span>
@@ -242,9 +264,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">"生你下来是为了让你服务别人的？"</td>
-        <td class="col2"><div class="translation">"Did I bring you into this world to serve others?"</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">"<mark class="hl" data-pair="生你下来">生你下来</mark>是为了让你<mark class="hl" data-pair="服务别人">服务别人</mark>的？"</div></td>
+        <td class="col2"><div class="translation">"Did I <mark class="hl" data-pair="生你下来">bring you into this world</mark> to <mark class="hl" data-pair="服务别人">serve others</mark>?"</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">bring</span><span class="pos">v.</span><span class="phonetic">/brɪŋ/</span><span class="sense-cn">带来、带到</span>
@@ -269,9 +291,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">"你看看这个草原上的树啊、草啊，有人吃有人用，便叫有用；"</td>
-        <td class="col2"><div class="translation">"Look at the trees and grasses on this prairie — when people eat them or use them, they call them useful;"</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">"你看看这个<mark class="hl" data-pair="草原">草原</mark>上的<mark class="hl" data-pair="树">树</mark>啊、<mark class="hl" data-pair="草">草</mark>啊，<mark class="hl" data-pair="有人吃有人用">有人吃有人用</mark>，<mark class="hl" data-pair="便叫有用">便叫有用</mark>；"</div></td>
+        <td class="col2"><div class="translation">"Look at the <mark class="hl" data-pair="草">grasses</mark> and <mark class="hl" data-pair="树">trees</mark> on this <mark class="hl" data-pair="草原">prairie</mark> — <mark class="hl" data-pair="有人吃有人用">when people eat them or use them</mark>, <mark class="hl" data-pair="便叫有用">they call them useful</mark>;"</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">prairie</span><span class="pos">n.</span><span class="phonetic">/ˈpreəri/</span><span class="sense-cn">草原、大牧场</span>
@@ -291,9 +313,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">"要是没有人用，它就这么待在草原上也很好嘛！"</td>
-        <td class="col2"><div class="translation">"but if no one uses them, isn't it perfectly fine for them to simply stay on the prairie just as they are?"</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">"<mark class="hl" data-pair="要是没有人用">要是没有人用</mark>，它就这么<mark class="hl" data-pair="待在草原上">待在草原上</mark>也很好嘛！"</div></td>
+        <td class="col2"><div class="translation">"<mark class="hl" data-pair="要是没有人用">but if no one uses them</mark>, isn't it perfectly fine for them to <mark class="hl" data-pair="待在草原上">simply stay on the prairie</mark> just as they are?"</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">stay</span><span class="pos">v.</span><span class="phonetic">/steɪ/</span><span class="sense-cn">停留、待在</span>
@@ -316,8 +338,8 @@
         <td class="col1 section-title" colspan="3">段落二 · 活得有用的执念</td>
       </tr>
       <tr>
-        <td class="col1">【衔接句】我想，大家之所以会被这段对话打动，是因为传统认知中，我们总觉得，一定要活得有价值，要么能赚钱养家，要么能承担家务劳动。</td>
-        <td class="col2"><div class="translation">I believe the reason this dialogue strikes such a chord is that, in our traditional way of thinking, we always feel that life must be lived in a meaningful way — either one must be able to earn money to support the family, or one must shoulder the housework.</div></td>
+        <td class="col1"><div class="source-cell">【衔接句】<mark class="hl" data-pair="我想">我想</mark>，大家之所以会被<mark class="hl" data-pair="这段对话">这段对话</mark>打动，是因为<mark class="hl" data-pair="传统认知中">传统认知中</mark>，我们总觉得，一定要<mark class="hl" data-pair="活得有价值">活得有价值</mark>，<mark class="hl" data-pair="要么能赚钱养家">要么能赚钱养家</mark>，<mark class="hl" data-pair="要么能承担家务劳动">要么能承担家务劳动</mark>。</div></td>
+        <td class="col2"><div class="translation"><mark class="hl" data-pair="我想">I believe</mark> the reason this <mark class="hl" data-pair="这段对话">dialogue</mark> strikes such a chord is that, in our <mark class="hl" data-pair="传统认知中">traditional way of thinking</mark>, we always feel that life must be lived in a <mark class="hl" data-pair="活得有价值">meaningful way</mark> — <mark class="hl" data-pair="要么能赚钱养家">either one must be able to earn money to support the family</mark>, or <mark class="hl" data-pair="要么能承担家务劳动">one must shoulder the housework</mark>.</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">dialogue</span><span class="pos">n.</span><span class="phonetic">/ˈdaɪəlɒɡ/</span><span class="sense-cn">对话、对白</span>
@@ -355,9 +377,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">但如果时时刻刻都以有用与否来衡量，我们就会将自己约束在条条框框中，直至紧绑得让人难以忍受。</td>
-        <td class="col2"><div class="translation">But if we measure ourselves every moment by whether we are "useful" or not, we will end up confining ourselves within a rigid set of rules, until we are bound so tightly that it becomes unbearable.</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">但如果<mark class="hl" data-pair="时时刻刻">时时刻刻</mark>都以<mark class="hl" data-pair="有用与否">有用与否</mark>来衡量，我们就会将自己<mark class="hl" data-pair="约束在条条框框中">约束在条条框框中</mark>，直至<mark class="hl" data-pair="紧绑得让人难以忍受">紧绑得让人难以忍受</mark>。</div></td>
+        <td class="col2"><div class="translation">But if we measure ourselves <mark class="hl" data-pair="时时刻刻">every moment</mark> by whether we are "useful" or not, we will end up <mark class="hl" data-pair="约束在条条框框中">confining ourselves within a rigid set of rules</mark>, until we are bound so tightly that it becomes <mark class="hl" data-pair="紧绑得让人难以忍受">unbearable</mark>.</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">confine</span><span class="pos">v.</span><span class="phonetic">/kənˈfaɪn/</span><span class="sense-cn">限制、约束</span>
@@ -385,9 +407,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">况且，任何人都没有权利质疑他人的生活，一个人的生活是否有价值，最终只能由自己评判。</td>
-        <td class="col2"><div class="translation">Moreover, no one has the right to question how another person chooses to live — whether one's life is valuable can ultimately be judged only by oneself.</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell"><mark class="hl" data-pair="况且">况且</mark>，任何人都没有权利<mark class="hl" data-pair="质疑他人的生活">质疑他人的生活</mark>，一个人的生活是否有价值，<mark class="hl" data-pair="最终">最终</mark>只能<mark class="hl" data-pair="由自己评判">由自己评判</mark>。</div></td>
+        <td class="col2"><div class="translation"><mark class="hl" data-pair="况且">Moreover</mark>, no one has the right to <mark class="hl" data-pair="质疑他人的生活">question how another person chooses to live</mark> — whether one's life is valuable can <mark class="hl" data-pair="最终">ultimately</mark> be judged <mark class="hl" data-pair="由自己评判">only by oneself</mark>.</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">moreover</span><span class="pos">adv.</span><span class="phonetic">/mɔːrˈəʊvə(r)/</span><span class="sense-cn">此外、而且</span>
@@ -423,9 +445,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">若他能够遵从自己的内心，按照自己的方式自洽地度过一生，这就是最有价值的人生。</td>
-        <td class="col2"><div class="translation">If a person can follow their own heart and live a self-consistent life in their own way, that is the most valuable life of all.</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">若他能够<mark class="hl" data-pair="遵从自己的内心">遵从自己的内心</mark>，按照<mark class="hl" data-pair="自己的方式">自己的方式</mark><mark class="hl" data-pair="自洽地度过一生">自洽地度过一生</mark>，这就是<mark class="hl" data-pair="最有价值的人生">最有价值的人生</mark>。</div></td>
+        <td class="col2"><div class="translation">If a person can <mark class="hl" data-pair="遵从自己的内心">follow their own heart</mark> and live a <mark class="hl" data-pair="自洽地度过一生">self-consistent life</mark> in <mark class="hl" data-pair="自己的方式">their own way</mark>, that is <mark class="hl" data-pair="最有价值的人生">the most valuable life of all</mark>.</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">follow</span><span class="pos">v.</span><span class="phonetic">/ˈfɒləʊ/</span><span class="sense-cn">跟随、遵从</span>
@@ -460,9 +482,9 @@
       <tr>
         <td class="col1 section-title" colspan="3">段落三 · 大城市追梦还是回家考公？</td>
       </tr>
-      <tr>
-        <td class="col1">前不久，一位年轻的粉丝朋友在社交媒体上问了我这样一个问题：自己想留在大城市追求职业梦想，但过年团聚时，父母却催她回家考公务员，该怎么办？</td>
-        <td class="col2"><div class="translation">Not long ago, a young fan reached out to me on social media with this question: she wants to stay in the big city to pursue her career dreams, but whenever the family gathers for the New Year, her parents urge her to come home and sit for the civil service exam — what should she do?</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">前不久，一位年轻的粉丝朋友在<mark class="hl" data-pair="社交媒体">社交媒体</mark>上问了我这样一个问题：自己想<mark class="hl" data-pair="留在大城市">留在大城市</mark><mark class="hl" data-pair="追求职业梦想">追求职业梦想</mark>，但<mark class="hl" data-pair="过年团聚时">过年团聚时</mark>，父母却<mark class="hl" data-pair="催她回家考公务员">催她回家考公务员</mark>，该怎么办？</div></td>
+        <td class="col2"><div class="translation">Not long ago, a young fan <mark class="hl" data-pair="社交媒体">reached out to me on social media</mark> with this question: she wants to <mark class="hl" data-pair="留在大城市">stay in the big city</mark> to <mark class="hl" data-pair="追求职业梦想">pursue her career dreams</mark>, but <mark class="hl" data-pair="过年团聚时">whenever the family gathers for the New Year</mark>, her parents <mark class="hl" data-pair="催她回家考公务员">urge her to come home and sit for the civil service exam</mark> — what should she do?</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">reach</span><span class="pos">v.</span><span class="phonetic">/riːtʃ/</span><span class="sense-cn">伸出、联系</span>
@@ -500,9 +522,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">在我看来，这个问题并非难以处理，我们可以参考和尊重父母的意见，但真正能指引我们做出决定的，一定是自己的内心。</td>
-        <td class="col2"><div class="translation">In my view, this question is not all that hard to handle. We can take our parents' opinions into consideration and respect them, but what truly guides us in making a decision must always come from our own inner voice.</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell"><mark class="hl" data-pair="在我看来">在我看来</mark>，这个问题并非难以处理，我们可以参考和<mark class="hl" data-pair="尊重父母的意见">尊重父母的意见</mark>，但真正能<mark class="hl" data-pair="指引我们做出决定">指引我们做出决定</mark>的，一定是<mark class="hl" data-pair="自己的内心">自己的内心</mark>。</div></td>
+        <td class="col2"><div class="translation"><mark class="hl" data-pair="在我看来">In my view</mark>, this question is not all that hard to handle. We can take our parents' opinions into consideration and <mark class="hl" data-pair="尊重父母的意见">respect them</mark>, but what truly <mark class="hl" data-pair="指引我们做出决定">guides us in making a decision</mark> must always come from our own <mark class="hl" data-pair="自己的内心">inner voice</mark>.</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">in one's view</span>
@@ -524,9 +546,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">如果你确信大城市的机遇和挑战更符合你的志向，那么请勇敢地选择留下。</td>
-        <td class="col2"><div class="translation">If you are convinced that the opportunities and challenges of the big city align better with your aspirations, then please have the courage to choose to stay.</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">如果你<mark class="hl" data-pair="确信">确信</mark>大城市的<mark class="hl" data-pair="机遇和挑战">机遇和挑战</mark>更符合你的<mark class="hl" data-pair="志向">志向</mark>，那么请<mark class="hl" data-pair="勇敢地选择留下">勇敢地选择留下</mark>。</div></td>
+        <td class="col2"><div class="translation">If you are <mark class="hl" data-pair="确信">convinced</mark> that the <mark class="hl" data-pair="机遇和挑战">opportunities and challenges</mark> of the big city align better with your <mark class="hl" data-pair="志向">aspirations</mark>, then please have the courage to <mark class="hl" data-pair="勇敢地选择留下">choose to stay</mark>.</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">convinced</span><span class="pos">adj.</span><span class="phonetic">/kənˈvɪnst/</span><span class="sense-cn">确信的、坚信的</span>
@@ -551,9 +573,9 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td class="col1">当你的内核足够坚稳时，旁人的各种声音便不足以动摇你的决定。</td>
-        <td class="col2"><div class="translation">When your inner core is steady and strong enough, the various voices of those around you will no longer be enough to shake your resolve.</div></td>
+      <tr data-pair-row>
+        <td class="col1"><div class="source-cell">当你的<mark class="hl" data-pair="内核">内核</mark>足够<mark class="hl" data-pair="坚稳">坚稳</mark>时，<mark class="hl" data-pair="旁人的各种声音">旁人的各种声音</mark>便不足以<mark class="hl" data-pair="动摇你的决定">动摇你的决定</mark>。</div></td>
+        <td class="col2"><div class="translation">When your <mark class="hl" data-pair="内核">inner core</mark> is <mark class="hl" data-pair="坚稳">steady and strong</mark> enough, the <mark class="hl" data-pair="旁人的各种声音">various voices of those around you</mark> will no longer be enough to <mark class="hl" data-pair="动摇你的决定">shake your resolve</mark>.</div></td>
         <td class="col3">
           <div class="vocab-item">
             <span class="vocab-word">inner</span><span class="pos">adj.</span><span class="phonetic">/ˈɪnə(r)/</span><span class="sense-cn">内心的、内部的</span>
@@ -584,7 +606,12 @@
     </tbody>
   </table>
 
-  <p class="note">💡 提示：点击第二列译文（蓝色）朗读整句译文；点击第三列橙色单词/短语，<strong>只朗读其本身</strong>。红色虚框内为该单词在当前句子语境下的中文释义。</p>
+  <p class="note">
+    💡 <strong>使用提示</strong>：<br>
+    ① 在<strong>第一列</strong>用鼠标选中一段文字（短句或词语）→ <strong>0.8 秒后</strong>，第二列对应译文会自动高亮。<br>
+    ② 点击第二列译文（蓝色）→ 朗读整句；点击第三列橙色单词/短语 → 只朗读单词/短语本身。<br>
+    ③ 点击表格外任意位置或按 <kbd>Esc</kbd> 键，可取消高亮。
+  </p>
 </div>
 
 <script>
@@ -628,6 +655,137 @@
       if (text) speak(text, 'en-US');
     });
   });
+
+  // ============================================================
+  // 选中联动高亮：原文 → 译文
+  // ============================================================
+  (function () {
+    const HIGHLIGHT_DELAY = 800;       // 防抖延迟（ms）
+    const MIN_LEN = 1;                 // 最小选区长度
+    const MAX_LEN = 50;                // 最大选区长度
+    let timer = null;
+    let activeMarks = [];              // 当前高亮的 mark 元素
+
+    function clearActive() {
+      activeMarks.forEach(m => m.classList.remove('active'));
+      activeMarks = [];
+    }
+
+    // 判断选区文本是否合理
+    function isReasonable(text) {
+      if (!text) return false;
+      const t = text.trim();
+      if (t.length < MIN_LEN || t.length > MAX_LEN) return false;
+      // 仅含标点/空白，不处理
+      if (!/[\u4e00-\u9fa5a-zA-Z]/.test(t)) return false;
+      return true;
+    }
+
+    // 规范化：去掉首尾空白与常见标点
+    function normalize(text) {
+      return text.replace(/[\s\u3000,.，。；;：:、!！?？"'""''()()【】\[\]·…—\-]+/g, '').toLowerCase();
+    }
+
+    // 在指定行（tr）的第二列中查找 data-pair 与选中内容匹配的 mark
+    function findMatchingMarks(row, selectedText) {
+      const translation = row.querySelector('.translation');
+      if (!translation) return [];
+      const normSel = normalize(selectedText);
+      if (!normSel) return [];
+
+      const marks = translation.querySelectorAll('mark.hl[data-pair]');
+
+      // 1) 完全相等（data-pair 与选中文本规范化后一致）
+      for (const m of marks) {
+        if (normalize(m.getAttribute('data-pair')) === normSel) {
+          return [m];
+        }
+      }
+
+      // 2) 包含关系：选中文本是某 data-pair 的子串
+      const contains = [];
+      for (const m of marks) {
+        const pair = normalize(m.getAttribute('data-pair'));
+        if (pair && (pair.includes(normSel) || normSel.includes(pair))) {
+          contains.push(m);
+        }
+      }
+      if (contains.length > 0) {
+        // 取最接近长度的那个
+        contains.sort((a, b) => {
+          const la = normalize(a.getAttribute('data-pair')).length;
+          const lb = normalize(b.getAttribute('data-pair')).length;
+          return Math.abs(la - normSel.length) - Math.abs(lb - normSel.length);
+        });
+        return [contains[0]];
+      }
+
+      return [];
+    }
+
+    function handleSelection() {
+      if (timer) { clearTimeout(timer); timer = null; }
+
+      const sel = window.getSelection();
+      if (!sel || sel.rangeCount === 0 || sel.isCollapsed) {
+        clearActive();
+        return;
+      }
+
+      const text = sel.toString();
+      if (!isReasonable(text)) {
+        clearActive();
+        return;
+      }
+
+      // 选区必须在第一列（.source-cell）内
+      const range = sel.getRangeAt(0);
+      const container = range.commonAncestorContainer;
+      const sourceCell = (container.nodeType === 1 ? container : container.parentElement)
+        ?.closest('.source-cell');
+      if (!sourceCell) {
+        clearActive();
+        return;
+      }
+
+      const row = sourceCell.closest('tr[data-pair-row]');
+      if (!row) {
+        clearActive();
+        return;
+      }
+
+      // 800ms 延迟
+      timer = setTimeout(() => {
+        clearActive();
+        const matches = findMatchingMarks(row, text);
+        if (matches.length > 0) {
+          matches.forEach(m => {
+            m.classList.add('active');
+            activeMarks.push(m);
+          });
+        }
+      }, HIGHLIGHT_DELAY);
+    }
+
+    // 选区变化
+    document.addEventListener('selectionchange', handleSelection);
+    // 鼠标松开兜底
+    document.addEventListener('mouseup', () => requestAnimationFrame(handleSelection));
+
+    // Esc 取消高亮
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') clearActive();
+    });
+
+    // 点击其他区域清除
+    document.addEventListener('mousedown', (e) => {
+      const t = e.target;
+      if (t.closest('.source-cell')) return;
+      if (t.closest('.translation')) return;
+      if (t.closest('.vocab-word')) return;
+      clearActive();
+    });
+  })();
 </script>
 </body>
 </html>
